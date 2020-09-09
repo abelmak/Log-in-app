@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView eAttemptsInfo;
 
     private String Username = "Admin";
-    private String Password = "12345678";
+    private String Password = "password123";
 
     boolean isValid = false;
     private int counter = 5;
