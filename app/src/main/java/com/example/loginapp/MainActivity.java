@@ -15,9 +15,8 @@ public class MainActivity extends AppCompatActivity {
     private EditText ePassword;
     private Button eLogin;
     private TextView eAttemptsInfo;
+    private TextView eRegister;
 
-    private String Username = "Admin";
-    private String Password = "password123";
 
     boolean isValid = false;
     private int counter = 5;
@@ -35,6 +34,17 @@ public class MainActivity extends AppCompatActivity {
         ePassword = findViewById(R.id.etPassword);
         eLogin = findViewById(R.id.btnLogin);
         eAttemptsInfo = findViewById(R.id.tvAttemptsInfo);
+        eRegister = findViewById(R.id.tvRegister);
+
+        eRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, RegistrationActivity.class));
+            }
+        });
+
+
+
 
 
         eLogin.setOnClickListener(new View.OnClickListener() {
@@ -72,9 +82,12 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     private boolean validate(String name,String password){
-        if(name.equals(Username) && password.equals(Password)){
-            return true;
+        if(RegistrationActivity.credentials != null){
+            if(name.equals(RegistrationActivity.credentials.getUsername()) && password.equals(RegistrationActivity.credentials.getPassword())){
+                return true;
+            }
         }
+
         return false;
     }
 }
