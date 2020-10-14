@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class HomePageActivity extends AppCompatActivity {
@@ -15,6 +16,7 @@ public class HomePageActivity extends AppCompatActivity {
     private TextView eaccCredits;
     private TextView esemCredits;
     private TextView eWelcome;
+    private Button eCalc;
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -32,6 +34,15 @@ public class HomePageActivity extends AppCompatActivity {
         eaccCredits.setText("Accumulated Credits: " + RegistrationActivity.profile.getAccCredits());
         esemCredits = findViewById(R.id.tvsemCredits);
         esemCredits.setText("Credits this semester: " + RegistrationActivity.profile.getSemCredits());
+        eCalc = findViewById(R.id.btnCalc);
+
+        eCalc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomePageActivity.this, GPACalculator.class);
+                startActivity(intent);
+            }
+        });
 
     }
     public void csbrowser(View view){
