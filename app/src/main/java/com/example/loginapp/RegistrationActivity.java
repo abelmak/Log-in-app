@@ -40,8 +40,8 @@ public class RegistrationActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String regUsername = eRegName.getText().toString();
                 String regPassword = eRegPassword.getText().toString();
-                Integer regcGPA = Integer.parseInt(eRegcGPA.getText().toString());
-                Integer regpGPA = Integer.parseInt(eRegpGPA.getText().toString());
+                Float regcGPA = Float.parseFloat(eRegcGPA.getText().toString());
+                Float regpGPA = Float.parseFloat(eRegpGPA.getText().toString());
                 Integer regaccCredits = Integer.parseInt(eRegaccCredits.getText().toString());
                 Integer regsemCredits = Integer.parseInt(eRegsemCredits.getText().toString());
 
@@ -61,7 +61,8 @@ public class RegistrationActivity extends AppCompatActivity {
 
     private boolean validate(String username, String password){
         if(username.isEmpty() || password.length() < 8){
-            Toast.makeText(this, "Please enter all the details, password should be at least 8 characters!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Please enter all the details, password should be at least 8 characters!",
+                    Toast.LENGTH_SHORT).show();
             return false;
         }
         return true;

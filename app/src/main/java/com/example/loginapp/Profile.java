@@ -1,31 +1,31 @@
 package com.example.loginapp;
 
 public class Profile {
-    private Integer cGPA;
-    private Integer pGPA;
+    private Float cGPA;
+    private Float pGPA;
     private Integer accCredits;
     private Integer semCredits;
 
-    Profile(Integer cGPA, Integer pGPA, Integer accCredits, Integer semCredits){
+    Profile(Float cGPA, Float pGPA, Integer accCredits, Integer semCredits){
         this.cGPA = cGPA;
         this.pGPA = pGPA;
         this.accCredits = accCredits;
         this.semCredits = semCredits;
     }
 
-    public Integer getcGPA() {
+    public Float getcGPA() {
         return cGPA;
     }
 
-    public void setcGPA(Integer cGPA) {
+    public void setcGPA(Float cGPA) {
         this.cGPA = cGPA;
     }
 
-    public Integer getpGPA() {
+    public Float getpGPA() {
         return pGPA;
     }
 
-    public void setpGPA(Integer pGPA) {
+    public void setpGPA(Float pGPA) {
         this.pGPA = pGPA;
     }
 

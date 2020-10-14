@@ -35,7 +35,8 @@ public class HomePageActivity extends AppCompatActivity {
 
     }
     public void csbrowser(View view){
-        Intent browserIntent=new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.eee.ntu.edu.sg/Programmes/ProspectiveStudents/UG/IEM/Curriculum/Pages/Curriculum-Structure.aspx"));
+        Intent browserIntent=new Intent(Intent.ACTION_VIEW, Uri.parse
+                ("http://www.eee.ntu.edu.sg/Programmes/ProspectiveStudents/UG/IEM/Curriculum/Pages/Curriculum-Structure.aspx"));
         startActivity(browserIntent);
     }
 }
