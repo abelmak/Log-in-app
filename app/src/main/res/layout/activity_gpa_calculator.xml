@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="175px"
         android:layout_marginTop="350px"
-        android:text="GRADE 1: "
+        android:text="MOD 1: "
         android:textSize="50px"
         android:textStyle="bold" />
 
@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="175px"
         android:layout_marginTop="500px"
-        android:text="GRADE 2: "
+        android:text="MOD 2: "
         android:textSize="50px"
         android:textStyle="bold" />
 
@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="175px"
         android:layout_marginTop="650px"
-        android:text="GRADE 3: "
+        android:text="MOD 3: "
         android:textSize="50px"
         android:textStyle="bold" />
 
@@ -46,7 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="175px"
         android:layout_marginTop="800px"
-        android:text="GRADE 4: "
+        android:text="MOD 4: "
         android:textSize="50px"
         android:textStyle="bold" />
 
@@ -55,7 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="175px"
         android:layout_marginTop="950px"
-        android:text="GRADE 5: "
+        android:text="MOD 5: "
         android:textSize="50px"
         android:textStyle="bold" />
 
@@ -74,7 +74,8 @@
         android:layout_height="120px"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="325px"
-        android:inputType="number"
+        android:hint="Enter Grade"
+        android:inputType="number|text"
         android:textSize="40px" />
 
     <EditText
@@ -86,6 +87,7 @@
         android:layout_marginTop="325px"
         android:layout_marginEnd="28dp"
         android:layout_marginRight="28dp"
+        android:hint="Credits"
         android:inputType="number"
         android:textSize="40px"
         tools:text="Credit"
@@ -105,6 +107,7 @@
         android:layout_marginTop="11dp"
         android:layout_marginEnd="28dp"
         android:layout_marginRight="28dp"
+        android:hint="Credits"
         android:inputType="number"
         android:textSize="40px"
         tools:text="Credit"
@@ -124,6 +127,7 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="28dp"
         android:layout_marginRight="28dp"
+        android:hint="Credits"
         android:inputType="number"
         android:textSize="40px"
         tools:text="Credit"
@@ -143,6 +147,7 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="26dp"
         android:layout_marginRight="26dp"
+        android:hint="Credits"
         android:inputType="number"
         android:textSize="40px"
         tools:text="Credit"
@@ -162,6 +167,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="25dp"
         android:layout_marginRight="25dp"
+        android:hint="Credits"
         android:inputType="number"
         android:textSize="40px"
         tools:text="Credit"
@@ -173,7 +179,8 @@
         android:layout_height="120px"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="475px"
-        android:inputType="number"
+        android:hint="Enter Grade"
+        android:inputType="number|text"
         android:textSize="40px" />
 
     <EditText
@@ -182,7 +189,8 @@
         android:layout_height="120px"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="625px"
-        android:inputType="number"
+        android:hint="Enter Grade"
+        android:inputType="number|text"
         android:textSize="40px" />
 
     <EditText
@@ -191,7 +199,8 @@
         android:layout_height="120px"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="775px"
-        android:inputType="number"
+        android:hint="Enter Grade"
+        android:inputType="number|text"
         android:textSize="40px" />
 
     <EditText
@@ -200,7 +209,8 @@
         android:layout_height="120px"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="925px"
-        android:inputType="number"
+        android:hint="Enter Grade"
+        android:inputType="number|text"
         android:textSize="40px" />
 
     <TextView
