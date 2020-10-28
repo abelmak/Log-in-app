@@ -86,10 +86,10 @@ public class GPACalculator extends AppCompatActivity{
 
                         float average = g1*h1 + g2*h2 + g3*h3 + g4*h4 + g5*h5;
                         average = average / (h1 + h2 + h3 + h4 + h5);
-                        if (average <= 3.5) {
+                        if (average <= 3) {
                             tView.setText(Float.toString(average));
                             view.setBackgroundResource(R.color.red);
-                        } else if (average > 3.5 && average < 4) {
+                        } else if (average > 3 && average < 4) {
                             tView.setText(Float.toString(average));
                             view.setBackgroundResource(R.color.yellow);
                         } else if (average >= 4 && average <= 5) {
